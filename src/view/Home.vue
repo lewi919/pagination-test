@@ -17,8 +17,8 @@
 </template>
 
 <script setup>
-    import Loader from '@/components/Loader.vue';
     import { onMounted, reactive, ref } from 'vue';
+    import Loader from '@/components/Loader.vue';
 
     const pagination = reactive({
         pageSize: 10,
