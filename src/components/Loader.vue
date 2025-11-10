@@ -27,8 +27,8 @@
 
 <style scoped>
     .loader {
-        -webkit-animation: spin 1.5s linear infinite;
-        animation: spin 1.5s linear infinite;
+        -webkit-animation: spin 1s linear infinite;
+        animation: spin 1s linear infinite;
     }
 
     @-webkit-keyframes spin {

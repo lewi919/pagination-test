@@ -28,7 +28,7 @@ pnpm install
 ### Compile and Hot-Reload for Development
 
 ```sh
-pnpm dev
+pnpm run dev
 ```
 
 ### Compile and Minify for Production
