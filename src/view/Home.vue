@@ -28,7 +28,7 @@
     })
 
     const repos = ref([])
-    let repoUser = 'defunkt'
+    const repoUser = 'defunkt'
 
     const getData = async() =>{
         if(pagination.isLoading || !pagination.hasMore) return
@@ -37,7 +37,7 @@
         try{
             pagination.currentPage++
             const res = await fetch(`https://api.github.com/users/${repoUser}/repos?page=${pagination.currentPage}&per_page=${pagination.pageSize}`)
-            const data = await res.json()
+            const data = await res?.json()
             if(data?.length > 0){
                 repos.value = repos.value.concat(data)
             }
