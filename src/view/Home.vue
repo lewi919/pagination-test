@@ -47,6 +47,7 @@
         }
         catch(err){
             console.log(err, 'error')
+            pagination.hasMore = false
         }
         finally{
             pagination.isLoading = false
